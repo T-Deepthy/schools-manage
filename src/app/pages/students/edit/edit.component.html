@@ -1,0 +1,31 @@
+<div class="container mt-5 padding">
+    <h1>
+        {{header}}
+    </h1>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="">ID</label>
+            <input type="number" readonly="readonly" class="form-control" [ngModel]="student.id" name="id">
+        </div>
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" [ngModel]="student.name" name="name">
+        </div><div class="form-group">
+            <label for="">Gender</label>
+            <select class="form-control" [ngModel]="student.gender" name="gender"><option>Female</option><option>Male</option></select>
+        </div><div class="form-group">
+            <label for="">Age</label>
+            <input type="text" class="form-control" [ngModel]="student.age" name="age">
+        </div><div class="form-group">
+            <label for="">Guardian</label>
+            <input type="text" class="form-control" [ngModel]="student.guardian" name="guardian">
+        </div>
+        <div class="form-group">
+            <label for="">Class</label>
+            <input type="text" class="form-control" [ngModel]="student.class" name="class" readonly="readonly">
+        </div>
+        <div class="form-group">
+            <button type="submit">Save</button>
+        </div>
+    </form>
+</div>

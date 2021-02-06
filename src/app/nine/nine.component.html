@@ -1,0 +1,30 @@
+<div class="padding">
+    <!-- <h4>Statitic report for class 9</h4>
+    <button class="add" >ADD</button>
+    <button class="edit">EDIT</button>
+    <button class="delete">DELETE</button> -->
+    <h1>List Students</h1>
+    <a class="btn btn-primary mb-4" routerLink="student/add/0">Add Student</a>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Age</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Guardian</th>
+            <th>Class</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students" >
+                <td *ngIf="student.class==9">{{student.id}}</td>
+                <td *ngIf="student.class==9">{{student.age}}</td>
+                <td *ngIf="student.class==9">{{student.name}}</td>
+                <td *ngIf="student.class==9">{{student.gender}}</td>
+                <td *ngIf="student.class==9">{{student.guardian}}</td>
+                <td *ngIf="student.class==9">{{student.class}}</td>
+                <td *ngIf="student.class==9"><a [routerLink]="['student/edit/',student.id]">Edit</a></td>
+                <td *ngIf="student.class==9"><button (click)="onDelete(student.id)">x</button></td>
+             </tr>
+        </tbody>
+    </table>
+    </div>

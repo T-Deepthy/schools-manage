@@ -1,0 +1,21 @@
+.padding{ 
+    margin-left: 260px;
+    
+}
+button.add {
+    padding: 5px 10px ;
+        border: 0 ;
+        background: rgb(48, 153, 27) ;
+        margin-right: 5px ;
+    }
+    button.edit {
+        padding: 5px 10px ;
+            border: 0 ;
+            background: rgb(176, 194, 16) ;
+            margin-right: 5px ;
+        }button.delete {
+            padding: 5px 10px ;
+                border: 0 ;
+                background: rgb(230, 9, 75) ;
+                margin-right: 5px ;
+            }
